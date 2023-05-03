@@ -1,4 +1,4 @@
-# My Sale Management App design using React and redux
+# My Sale Management Codding using React and redux
 
 This project uses Ghulam Rasool design
 
