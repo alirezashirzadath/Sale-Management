@@ -6,6 +6,7 @@ import {RxPerson} from "react-icons/rx";
 import NavItem from "./navItem";
 import {useDispatch, useSelector} from "react-redux";
 import {CHANGE_INDEX} from "../../../services/redux/slices/mainSlice";
+import {primaryColor, secondaryColor} from "../../../constans/constans";
 
 const BottomNav = ({items}:{items:JSX.Element[]}) => {
 
@@ -17,13 +18,18 @@ const BottomNav = ({items}:{items:JSX.Element[]}) => {
     }
     return (
         <Stack sx={{
-            position:"fixed",
+            position:"absolute",
             width:"100%",
             display:"flex",
             flexDirection:"row",
             justifyContent:"center",
             alignItems:"center",
-            bottom:"1.5rem"
+            m:0,
+            bottom:"0",
+            backgroundColor:"blue",
+            py:1.5,
+            background: "linear-gradient(168deg, " + primaryColor + " 0%, " + secondaryColor + " 100%)",
+            boxShadow:"0 -20px  30px 1px "+primaryColor
         }}>
             <Stack sx={{
                 display:"flex",
